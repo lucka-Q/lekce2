@@ -17,4 +17,16 @@ document.body.innerHTML += "<h2> Házení kostkou bla bla </h2>"
 
 let hodKostkou = Math.ceil(Math.random() * 6)
 
+while (hodKostkou === 0) 
+    {hodKostkou = Math.ceil(Math.random() * 6)
+    }
+
 document.body.innerHTML += hodKostkou
+
+document.body.innerHTML += "<h2> Zaokrouhlování </h2> "
+
+const cisloNaZaokrouhleni = 56.7853453
+
+document.body.innerHTML += "<p> Číslo " + cisloNaZaokrouhleni + " zaokrouhlené na desetiny: " + (Math.round(cisloNaZaokrouhleni * 10))/10 +"</p>" 
+document.body.innerHTML += "<p> Číslo " + cisloNaZaokrouhleni + " zaokrouhlené na setiny: " + (Math.round(cisloNaZaokrouhleni*100))/100 + "</p>" 
+document.body.innerHTML += "<p> Číslo " + cisloNaZaokrouhleni + " zaokrouhlené na stovky: " + (Math.round(cisloNaZaokrouhleni/100))*100 + "</p>" 
